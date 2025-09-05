@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1"> <!--name tells responsive to browers--> 
+    <title>The Cactus Company | Online Indoor Plant Delivery</title>
+
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- Navigation bar + Logo // -->
+      <header class="grid">
+        <nav>      
+          <div class="logo">
+            <a href="index.html" >The Cactus Company</a>
+          </div>
+
+          <div class="left nav-left-space underline-hover">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact_us.html">Contact Us</a>  
+          </div>
+          
+          <!-- shopping cart -->
+          <div class="right nav-right-space cart">
+            <a href="cart.html"><img src="image/cart.png" alt="shopping cart link"></a>
+          </div>
+        </nav> 
+      </header>
+  
+
+    
+    <!-- Product List // -->
+    
+    <h1 class="center-text">Checkout Order</h1>
+    <section class="order-section">
+      <div class="table-scroll">
+        <table aria-labelledby="checkout-table" id="checkout-table">
+          <thead>
+          <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Name</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Price</th>
+              <th scope="col">Amount</th>
+          </tr>
+          </thead>
+          <tbody>
+    
+            <tr>
+              <td>
+                <img src="image/plant4-checkout.jpeg" alt="cactus plant product image thumbnail">
+              </td>
+              <td class="product-name">Cactus</td>
+              <td><input aria-label="quantity_1" type="number" id="quantity_1" class="quantity" name="quantity_1"   min="1" max='20' value='1'
+                onChange="index_num = 1; update_amount(index_num)" >
+              </td>
+              <td>$<span id="price_1">25</span></td>
+              <td>$<span id="amount_1">25</span></td>
+            </tr>
+            
+            <tr>
+              <td>
+                <img src="image/plant1-checkout.jpeg" alt="hanging jade potho product image thumnbail">
+              </td>
+              <td>Marble Queen</td>
+              <td><input aria-label="quantity_2" type="number" id="quantity_2" name="quantity_2"   min="1" max='20' value='1'
+                onChange="index_num = 2; update_amount(index_num)" >
+              </td>
+              <td>$<span id="price_2">39</span></td>
+              <td>$<span id="amount_2">39</span></td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+      <div class="checkout-summary">
+        <div>
+          <div class="small-title">Subtotal: <span id="subtotal"></span></div>
+        </div>
+        
+        <div class="small-title">Tax: free</div>
+        <div class="small-title">Shipping: free</div>
+        <div class="small-title">Total: <span id="total"></span> </div>
+      </div>
+
+      <div class="right order-button">
+        <a href="thankyou.html">Place Order</a>
+      </div>
+    </section>
+  
+
+
+    <!-- Footer // -->
+    <section class="footer left-right-padding-align center-text">
+      <div class="grid add-gutters three-column column-gap"> <!--description-->
+
+        <div>
+          <div class="logo"><a href="index.html">The Cactus Company</a></div>
+        </div>
+
+        <div>
+          <p>The Cactus Company 2022</p>
+          <div class="underline-hover" >
+            <a href="citation.html">Citation</a>
+          </div> 
+
+        </div>
+        <div>
+          <p>Address: 1234 Plantmore Street, Vancouver, BC, Canada</p>
+          <p>Phone: 604 123 4567</p>
+        </div>
+      </div>
+    </section>        
+
+    </div> <!--container ends--->
+
+
+    <script src="js/script.js"></script>
+  </body>
+</html>  
